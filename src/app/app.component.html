@@ -1,3 +1,11 @@
-<vesta-header (themeChanged)="changeTheme($event)"></vesta-header>
-<router-outlet></router-outlet>
-<vesta-footer></vesta-footer>
+<ng-container *ngIf="appConfigFetched; else loading">
+    <vesta-header (themeChanged)="changeTheme($event)" [themes]="themes"></vesta-header>
+    <div id="container">
+        <router-outlet></router-outlet>
+    </div>
+    <vesta-footer></vesta-footer>
+</ng-container>
+
+<ng-template #loading>
+    <vesta-loading [message]="loadingMessage"></vesta-loading>
+</ng-template>

@@ -1,2 +1,6 @@
 <vesta-search></vesta-search>
-<button (click)="changeTheme('dark')">change theme</button>
+<select (change)="changeTheme($event.target.value)">
+    <option *ngFor="let theme of themes" value={{theme}}>
+        {{theme | titlecase}}
+    </option>
+</select>

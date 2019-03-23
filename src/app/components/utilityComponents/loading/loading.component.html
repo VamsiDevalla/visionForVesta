@@ -1,0 +1,9 @@
+<div class="content">
+    <img src="" alt="Your Icon will be here">
+    <p>{{message}}</p>
+    <ng-container [ngSwitch]="loadingIndicator">
+      <ng-container *ngSwitchDefault>
+        <p>spinner here</p>
+      </ng-container>
+    </ng-container>
+ </div>

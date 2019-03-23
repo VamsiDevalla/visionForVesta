@@ -6,8 +6,12 @@ import { Component, HostBinding } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
+  themes = ['light', 'dark'];
   @HostBinding('class') theme: string;
   title = 'visionForVesta';
+  appConfigFetched = false;
+  loadingMessage = 'Please wait while we load application configurations';
   constructor() {
     this.theme = 'light';
   }
