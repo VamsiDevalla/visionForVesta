@@ -1,0 +1,27 @@
+.icon {
+    color: #000;
+    position: absolute;
+    margin-left: 4px;
+    width: 7px;
+    height: 7px;
+    border-bottom: solid 1.5px currentColor;
+    border-right: solid 1.5px currentColor;
+    transition: all 150ms linear;
+    -moz-transition: all 150ms linear;
+    -webkit-transition: all 150ms linear;
+    -o-transition: all 150ms linear; /* Opera */
+    -ms-transition: all 150ms linear; /* IE 9 */
+    transform: rotate(-45deg);
+    -moz-transform:    rotate(-45deg); /* Firefox */
+	-webkit-transform: rotate(-45deg); /* Webkit */
+	-o-transform:      rotate(-45deg); /* Opera */
+    -ms-transform:     rotate(-45deg); /* IE 9 */
+}
+
+.expanded {
+    transform:         rotate(45deg); /* CSS3 */
+    -moz-transform:    rotate(45deg); /* Firefox */
+	-webkit-transform: rotate(45deg); /* Webkit */
+	-o-transform:      rotate(45deg); /* Opera */
+    -ms-transform:     rotate(45deg); /* IE 9 */
+}

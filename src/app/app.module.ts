@@ -18,6 +18,7 @@ import { AccordianComponent } from './components/utilityComponents/accordian/acc
 import { CardComponent } from './components/utilityComponents/card/card.component';
 import { SearchComponent } from './components/search/search.component';
 import { LoadingComponent } from './components/utilityComponents/loading/loading.component';
+import { CollapseExpandComponent } from './components/utilityComponents/icons/collapse-expand/collapse-expand.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { LoadingComponent } from './components/utilityComponents/loading/loading
     AccordianComponent,
     CardComponent,
     SearchComponent,
-    LoadingComponent
+    LoadingComponent,
+    CollapseExpandComponent
   ],
   imports: [
     BrowserModule,
