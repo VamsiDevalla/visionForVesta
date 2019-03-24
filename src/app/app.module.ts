@@ -13,12 +13,11 @@ import { AccountNetworkComponent } from './components/account-network/account-ne
 import { CameraComponent } from './components/camera/camera.component';
 import { GatewayComponent } from './components/gateway/gateway.component';
 import { OneColumnCardComponent } from './components/utilityComponents/one-column-card/one-column-card.component';
-import { AccordianCardItemComponent } from './components/utilityComponents/accordian-card-item/accordian-card-item.component';
-import { AccordianComponent } from './components/utilityComponents/accordian/accordian.component';
 import { CardComponent } from './components/utilityComponents/card/card.component';
 import { SearchComponent } from './components/search/search.component';
 import { LoadingComponent } from './components/utilityComponents/loading/loading.component';
 import { CollapseExpandComponent } from './components/utilityComponents/icons/collapse-expand/collapse-expand.component';
+import { AccordionComponent } from './components/utilityComponents/accordion/accordion.component';
 
 @NgModule({
   declarations: [
@@ -33,12 +32,11 @@ import { CollapseExpandComponent } from './components/utilityComponents/icons/co
     CameraComponent,
     GatewayComponent,
     OneColumnCardComponent,
-    AccordianCardItemComponent,
-    AccordianComponent,
     CardComponent,
     SearchComponent,
     LoadingComponent,
-    CollapseExpandComponent
+    CollapseExpandComponent,
+    AccordionComponent
   ],
   imports: [
     BrowserModule,
